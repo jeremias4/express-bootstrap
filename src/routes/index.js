@@ -27,6 +27,7 @@ router.get("/posts", async (req, res) => {
   res.render("posts", { vp: respon.data });
 });
 
+router.get("/ofertas", (req, res) => res.render("carrito"));
 //envio de datos al servidor
 router.post("/compra", (req, res) => {
   const newProduct = { ...req.body, id: products.length + 1 };

@@ -9,10 +9,12 @@
 </head>
 <body>
     <%- include("partials/navigation") %>
-    <% for (let i = 0; i < vp.lenght ; i++) { %>
-            <h1> <%= vp[i].title %> </h1>
-            <p> <%= vp[i].body %> </p>
-    <% } %>    
+    <ul>
+    <% for (var i = 0; i < vp.lenght; i++) { %>
+            <li><h1> <%= vp[i].title %> </h1></li>
+            <li> <p> <%= vp[i].body %> </p></li>
+    <% } %>
+    </ul>    
     <%- include("partials/footer") %>
 </body>
 </html>
